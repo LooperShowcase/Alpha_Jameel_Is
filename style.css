@@ -1,0 +1,240 @@
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#nav .active {
+  background-color: #04aa6d;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+
+  font-family: "Anton", serif;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+#worldCupWinners {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#para {
+  width: 50%;
+}
+#image {
+  height: 30%;
+}
+
+#img-containter {
+  display: flex;
+  flex-direction: column;
+}
+
+#container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nav li a:hover {
+  background-color: #555;
+  transition: 0.3s ease-in-out;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+iframe {
+  width: 45%;
+  height: 250px;
+}
+
+#fifa-info {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+
+}
+
+
+/* General Styles */
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Anton", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#nav li {
+  flex: 1;
+  text-align: center;
+}
+
+#nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  background-color: #555;
+  transition: 0.3s ease-in-out;
+}
+
+#nav .active {
+  background-color: #04aa6d;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+  }
+  #nav li {
+    width: 100%;
+  }
+}
+
+/* Typography */
+h1 {
+  font-size: 5vw;
+  color: black;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+p {
+  font-size: 2.5vw;
+  color: black;
+}
+
+/* Content Layout */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#para {
+  width: 50%;
+}
+
+#image {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  p {
+    font-size: 4vw;
+  }
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #para {
+    width: 90%;
+  }
+}
+
+/* Image Container */
+#img-containter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Videos */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 200px;
+  }
+}
